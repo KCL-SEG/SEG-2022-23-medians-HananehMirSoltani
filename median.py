@@ -9,4 +9,9 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+numbers.sort()
+q = len(numbers)//2 
+if len(numbers) % 2 !=0:
+   print(f'median is: {numbers[q]}')
+else:
+    print(f'median is: {(numbers[q-1]+numbers[q])/2}')
